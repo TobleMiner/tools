@@ -29,7 +29,7 @@ int main(int argc, char** argv) {
 	}
 
 	crc = crc32(0L, Z_NULL, 0);
-	while((read_len = read(fd, buff, sizeof(buff)))) {
+	while((read_len = read(fd, buff, sizeof(buff))) > 0) {
 		crc = crc32(crc, buff, read_len);
 	}
 
