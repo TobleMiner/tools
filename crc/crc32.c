@@ -9,7 +9,7 @@
 
 int main(int argc, char** argv) {
 	char* fname;
-	unsigned char* buff[4096];
+	unsigned char buff[4096];
 	int fd, err = 0;
 	ssize_t read_len;
 	uint32_t crc;
